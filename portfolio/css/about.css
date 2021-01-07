@@ -1,0 +1,236 @@
+/* ----------------------------- */
+/* page title
+/* ----------------------------- */
+.page-title-wrapper.about-page-title{
+  height: 360px;
+}
+
+/* ----------------------------- */
+/* profile
+/* ----------------------------- */
+
+.profile_list{
+  display: flex;
+}
+
+.about{
+  text-align: center;
+  font-size: 4rem;
+}
+
+.profile-wrapper{
+  align-items: center;
+  margin-bottom: 60px;
+}
+.profile-img-wrapper{
+  max-width: 280px;
+  margin-right: 20px;
+}
+.subsection{
+  margin-bottom: 40px;
+}
+.subsection:last-of-type{
+  margin-bottom: 140px;
+}
+.prf-subsection-title{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.prf-subsection-title_jp{
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* skills */
+.skill-list_design{
+  margin-bottom: 16px;
+}
+.skill-item{
+  margin-bottom: 8px;
+}
+.skill-item::before{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #444;
+  vertical-align: middle;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+.skill-category{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* --------------- */
+
+.skill_list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill_item{
+  width: 200px;
+  height: 250px;
+  padding: 1.25em 1em;
+  border: 1px solid #62D5DF;
+  border-radius: 15px;
+  margin-bottom: 3em;
+}
+
+.skill_list li:nth-child(7){
+  margin-bottom: 0;
+}
+
+.skill_list li:last-child{
+  margin-bottom: 0;
+}
+
+.skill_name{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.skill_wrapper{
+  text-align: center;
+  margin: 0px;
+}
+
+.skill_img{
+  width: 120px;
+  height: 120px;
+  margin: 0px 0px 0px 0px;
+}
+
+.skill_level{
+  text-align: center;
+  color: #333;
+}
+
+.img_figma{
+  height: 90px;
+  width: auto;
+  margin: 15px 0;
+}
+
+.img_jquery{
+  height: 100px;
+  width: auto;
+  margin: 10px 0;
+}
+
+.skill_desc{
+  width: 13.89vw;
+  /* margin-top: 1.25em; */
+  margin: 0 auto;
+  padding-top: 1.25rem;
+  line-height: 1.5;
+}
+
+/* career */
+.career-list{
+  max-width: 440px;
+  margin: 0 auto;
+}
+.career-item.flex-rr{
+  align-items: center;
+  font-size: 1.2rem;
+}
+.career-date{
+  width: 87px;
+  text-align: center;
+}
+.career-date.accent-bg{
+  line-height: 2;
+  font-weight: bold;
+  color: #fff;
+}
+.career-text{
+  width: 327px;
+  padding: 4px 0 4px 14px;
+  line-height: 1.5;
+  position: relative;
+  border-left: 1px solid #333;
+}
+.career-text::before{
+  content: "";
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  background-color: #333;
+  border-radius: 50%;
+}
+.career-text.latest::before{
+  background-color: #eb9718;
+}
+
+
+/* thanks message */
+.thanks-message{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width:768px){
+  .page-title{
+    white-space: nowrap; /*自動での改行をしないようにする指定*/
+  }
+.profile-wrapper{
+    display: block;
+    max-width: 440px;
+    margin: 0 auto 60px;
+  }
+  .profile-img-wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 16px;
+  }
+  .prf-subsection-title{
+    margin-bottom: 5px;
+  }
+
+  /*skills*/
+  .skill-item{
+    line-height: 1.5;
+  }
+
+  /*career*/
+  .career-text{
+    width: 67%;
+    padding: 4px 0 4px 2vw;
+  }
+  .career-date{
+    width: 28%;
+    max-width: 120px;
+  }
+
+  .thanks-message{
+    line-height: 1.5;
+  }
+  .subsection:last-of-type{
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width:375px){
+  .skill_desc{
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .profile_list{
+    display: block;
+  }
+}
